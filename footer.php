@@ -125,6 +125,5 @@
 
                 document.oncopy = addLink;
             </script>
-
     </body>
 </html>

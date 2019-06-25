@@ -5,6 +5,7 @@
         
         <div class="row"><!--Раздел термины-->
         
+        
         <!-- Три колонки div=col-md-4  разделяют на три части термины-->
                     <div class="col-md-4">
                         <h3>Бизнес, экономика и юриспруденция</h3>
@@ -71,52 +72,7 @@
 
         <br><br><br>
 
-        <div class="container adverterans text-center">
-            <style>
-                .adverterans {
-                    max-width: 970px;
-                }
-
-                .adverterans, .adverterans a {
-                    color: #555;
-                }
-
-                .adverterans ins:before {
-                    content: "\201C";
-                    font-size: 300%;
-                    color: #ccc;
-                    display: block;
-                    margin-bottom: 15px;
-                }
-
-                .adverterans ins {
-                    font-size: 150%;
-                    line-height: 110%;
-                    font-family: "Times New Roman";
-                }
-
-                .adverterans ins a {
-                    text-decoration: none;
-                }
-
-                .adverterans .lec {
-                    margin-top: 15px;
-                }
-
-                .adverterans .lec:after {
-                    content: "— Станислав Ежи Лец —";
-                    font-size: 80%;
-                    display: block;
-                    margin-top: 10px;
-                    color: #888;
-                }
-            </style>
-            <ins data-revive-zoneid="12" data-revive-id="36e20d1b6d979a4dc88d48fb0f2d4032"></ins>
-            <script async src="https://ad.adverterans.ru/delivery/asyncjs.php"></script>
-            <div class="lec">
-                <img src="https://cdn.gufo.me/i/lec-photo.jpg" class="rounded-circle lec" width="50" height="50">
-            </div>
-        </div>
+        <?php require_once "quote.php"?>
 
         <br>
         
