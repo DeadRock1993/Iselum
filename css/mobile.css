@@ -1,0 +1,53 @@
+@media screen {
+	i.logo {
+		width: 200px;
+		height: 40px;
+		margin-top: 8px;
+		margin-left: 10px;
+		margin-right: 10px;
+		display: block;
+		background: url("../img/logo.png");
+	}
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (min--moz-device-pixel-ratio: 2),
+		only screen and (-o-min-device-pixel-ratio: 2/1),
+		only screen and (min-device-pixel-ratio: 2),
+		only screen and (min-resolution: 192dpi),
+		only screen and (min-resolution: 2dppx) {
+		i.logo {
+			background-image: url("../img/logo@2x.png");
+			background-size: 200px 40px;
+		}
+	}
+
+	/*
+    #search-word {
+        margin-left: 0;
+    }
+    */
+}
+
+@media screen and (max-width: 568px) {
+	i.logo {
+		width: 44px;
+		height: 40px;
+		margin-top: 8px;
+		margin-left: 10px;
+		margin-right: 5px;
+		display: block;
+		background: url("../img/logo-owl.png");
+	}
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (min--moz-device-pixel-ratio: 2),
+		only screen and (-o-min-device-pixel-ratio: 2/1),
+		only screen and (min-device-pixel-ratio: 2),
+		only screen and (min-resolution: 192dpi),
+		only screen and (min-resolution: 2dppx) {
+		i.logo {
+			background-image: url("../img/logo-owl@2x.png");
+			background-size: 44px 40px;
+		}
+	}
+}
