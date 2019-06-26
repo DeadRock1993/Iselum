@@ -125,5 +125,6 @@
 
                 document.oncopy = addLink;
             </script>
+    <?php wp_footer();?>
     </body>
 </html>

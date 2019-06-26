@@ -81,7 +81,7 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6">
                     <ul class="list-unstyled app-word-list">
-                                                
+                    
                         <li><a href="https://gufo.me/dict/accounting/%D0%B0-%D0%B4%D0%B0%D1%82%D0%BE">а-дато</a></li>
 
                         <li><a href="https://gufo.me/dict/accounting/%D0%B0-%D0%BA%D0%BE%D0%BD%D1%82%D0%BE">а-конто</a></li>

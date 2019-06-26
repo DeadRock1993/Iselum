@@ -5,7 +5,7 @@
         <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/script.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Cловари и энциклопедии</title>
+        <title><?php bloginfo('name')?></title>
         <meta property="og:title" content="Термины и Словари">
         <meta name="description" content="Термины и Словари.">
         <meta property="og:description" content="Термины и Словари. Ваш личный путеводитель в мире энциклопедий и словарей.">
@@ -25,7 +25,8 @@
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
         <meta name="apple-mobile-web-app-title" content="Словари">
-
+    
+    <?php wp_head();?>
     </head>
 
     <body id="top">
@@ -35,7 +36,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-auto">
-                            <a href="<?php echo get_template_directory_uri() ?>/index.php" title="Cловари и энциклопедии"><i class="logo"></i></a>
+                            <a href="<?php echo home_url();?>" title="Cловари и энциклопедии"><i class="logo"></i></a>
                         </div>
                         <div class="col">
                             <div class="header-search-form">
