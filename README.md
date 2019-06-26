@@ -1,3 +1,3 @@
-# KO_ProjectDictionary
+# Iselum
 
 Тема для проекта Термины и Словари (ISELUM).
