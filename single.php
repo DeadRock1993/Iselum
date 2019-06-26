@@ -3,47 +3,53 @@
             
 <section id="dictionary-acticle">
     <ol itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="breadcrumb hidden-print">
-        <li class="breadcrumb-item"><a href="https://gufo.me/dict/accounting" itemprop="url"><span itemprop="title">Большой бухгалтерский словарь</span></a></li>
+        <li class="breadcrumb-item">
+            <a href="https://gufo.me/dict/accounting" itemprop="url">
+                <span itemprop="title">Большой бухгалтерский словарь</span>
+            </a>
+        </li>
     </ol>
 
     <article>
 
         <br class="visible-print-block">
 
-        <h1>а-конто</h1>
+        <h1>а-конто</h1>         
         
-                            
-        
-        <p><span>Платеж, осуществляемый импортером на основании счетов экспортера в качестве предварительного расчета с последним.</span></p>
+        <p>
+            <span>Платеж, осуществляемый импортером на основании счетов экспортера в качестве предварительного расчета с последним.</span>
+        </p>
 
-
-                
         <div class="fb-quote"></div>
         <div class="clearfix"></div>
         
         <small class="source">
-            <span class="visible-print-inline">Источник: </span><span>Большой бухгалтерский словарь</span><span class="visible-print-inline"> на Gufo.me</span>
+            <span class="visible-print-inline">Источник: </span>
+            <span>Большой бухгалтерский словарь</span>
+            <span class="visible-print-inline">на Gufo.me</span>
         </small>
+
     </article>
     
     <div class="clearfix"></div>
     
     <nav class="hidden-print">
         <div class="row small">
-                            <div class="col">
-                    <i class="fa fa-long-arrow-left" aria-hidden="true"></i> <a href="https://gufo.me/dict/accounting/%D0%B0-%D0%B4%D0%B0%D1%82%D0%BE">а-дато</a>
-                </div>
+            <div class="col">
+                <i class="fa fa-long-arrow-left" aria-hidden="true"></i> 
+                <a href="https://gufo.me/dict/accounting/%D0%B0-%D0%B4%D0%B0%D1%82%D0%BE">а-дато</a>
+            </div>
             
-                            <div class="col text-right">
-                    <a href="https://gufo.me/dict/accounting/%D0%B0-%D0%BC%D0%B5%D1%82%D0%B0">а-мета</a> <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                </div>
-                    </div>
+            <div class="col text-right">
+                <a href="https://gufo.me/dict/accounting/%D0%B0-%D0%BC%D0%B5%D1%82%D0%B0">а-мета</a> 
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </div>
+        </div>
     </nav>
 
     <hr class="hidden-print">
         
-    
-    </section>
+</section>
 
 
     <section id="dictionary-more" class="hidden-print">
