@@ -8,28 +8,33 @@
         
         <!-- Три колонки div=col-md-4  разделяют на три части термины-->
                     <div class="col-md-4">
-                        <h3>Бизнес, экономика и юриспруденция</h3>
                         <ul class="list-unstyled">
-                            <li><a href="https://gufo.me/dict/accounting">Большой бухгалтерский словарь</a></li>
-                            <li><a href="https://gufo.me/dict/law">Большой юридический словарь</a></li>
-                            <li><a href="https://gufo.me/dict/financial_terms">Финансовый словарь терминов</a></li>
-                            <li><a href="https://gufo.me/dict/economics_terms">Экономический словарь терминов</a></li>
+                            <a href="#">
+                                <li class="inner-block inner-block-1 text-center">
+                                    <span class="block-img-text">Развитие личности</span>
+                                    <div class="color-overlay"></div>		
+                                </li>
+                            </a>    
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <h3>Математика и физика</h3>
                         <ul class="list-unstyled">
-                            <li><a href="https://gufo.me/dict/mathematics_encyclopedia">Математическая энциклопедия</a></li>
-                            <li><a href="https://gufo.me/dict/physics">Физический энциклопедический словарь</a></li>
+                            <a href="#">
+                                <li class="inner-block inner-block-1 text-center">
+                                    <span class="block-img-text">Космология и Астрономия</span>
+                                    <div class="color-overlay"></div>		
+                                </li>
+                            </a> 
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <h3>Строительство и геология</h3>
                         <ul class="list-unstyled">
-                            <li><a href="https://gufo.me/dict/architecture">Архитектурный словарь</a></li>
-                            <li><a href="https://gufo.me/dict/mining_encyclopedia">Горная энциклопедия</a></li>
-                            <li><a href="https://gufo.me/dict/building_terms">Строительная терминология</a></li>
-                            <li><a href="https://gufo.me/dict/ecology_terms">Экологические термины и определения</a></li>
+                            <a href="#">
+                                <li class="inner-block inner-block-1 text-center">
+                                    <span class="block-img-text">Расизм и Ксенофобия</span>
+                                    <div class="color-overlay"></div>		
+                                </li>
+                            </a> 
                         </ul>
                     </div>
 
@@ -43,27 +48,33 @@
 
         <!-- Три колонки div=col-md-4  разделяют на три части словари-->
                     <div class="col-md-4">
-                        <h3>Английский</h3>
                         <ul class="list-unstyled">
-                            <li><a href="https://gufo.me/dict/enru_medical">Англо-русский медицинский словарь</a></li>
-                            <li><a href="https://gufo.me/dict/enru_marine">Англо-русский морской словарь</a></li>
-                            <li><a href="https://gufo.me/dict/enru_muller">Англо-русский словарь Мюллера</a></li>
-                            <li><a href="https://gufo.me/dict/enru_printing">Англо-русский словарь по полиграфии</a></li>
-                            <li><a href="https://gufo.me/dict/enru_economics">Англо-русский словарь по экономике</a></li>   
+                            <a href="#">
+                                <li class="inner-block inner-block-1 text-center">
+                                    <span class="block-img-text">Риторика и Оратор</span>
+                                    <div class="color-overlay"></div>		
+                                </li>
+                            </a>   
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <h3>Болгарский</h3>
                         <ul class="list-unstyled">
-                            <li><a href="https://gufo.me/dict/bgru">Болгарско-русский словарь</a></li>
-                            <li><a href="https://gufo.me/dict/rubg">Русско-болгарский словарь</a></li>
+                            <a href="#">
+                                <li class="inner-block inner-block-1 text-center">
+                                    <span class="block-img-text">Самоконтроль и Дисциплинированность</span>
+                                    <div class="color-overlay"></div>		
+                                </li>
+                            </a>
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <h3>Азербайджанский</h3>
                         <ul class="list-unstyled">
-                            <li><a href="https://gufo.me/dict/azru">Азербайджанско-русский словарь</a></li>
-                            <li><a href="https://gufo.me/dict/ruaz">Русско-азербайджанский словарь</a></li>
+                            <a href="#">
+                                <li class="inner-block inner-block-1 text-center">
+                                    <span class="block-img-text">Личные качества человека</span>
+                                    <div class="color-overlay"></div>		
+                                </li>
+                            </a>
                         </ul>
                     </div>
             </div>

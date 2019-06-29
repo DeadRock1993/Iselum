@@ -410,3 +410,41 @@ h3 {
 #site-error ol > li > span {
 	color: #888;
 }
+.inner-block {
+	position: relative;
+	min-height: 40px;
+	margin-top: 15px;
+	overflow: hidden;
+}
+.color-overlay {
+	position: absolute;
+	display: block;
+	min-width: 100%;
+	height: 100%;
+	background: black;
+	opacity: .3;
+	top: 0;
+}
+.inner-block span {
+	display: inline-block;
+	position: relative;
+	color: white;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	/*height: 70%;*/
+	margin: auto;
+	padding: 5px;
+}
+.inner-block-1 {
+	/*background: url('https://demo2.lafeum.org/wp-content/uploads/2017/09/28-712x445.jpg') no-repeat 50% 50%;*/
+	background: #8e2de2;
+	border-radius: 10px;
+	background-size: cover;
+}
+.block-img-text {
+	z-index: 1;
+	font-size: 20px;
+}
