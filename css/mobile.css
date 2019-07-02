@@ -1,13 +1,14 @@
 @media screen {
-	i.logo {
+	img.logo {
 		width: 200px;
 		height: 40px;
 		margin-top: 8px;
 		margin-left: 10px;
 		margin-right: 10px;
 		display: block;
-		background: url("../img/lg.png") 50% 50% no-repeat;
+		/*background: url("../img/lg.png") 50% 50% no-repeat;
 		background-size: contain;
+		*/
 	}
 
 	@media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -16,9 +17,10 @@
 		only screen and (min-device-pixel-ratio: 2),
 		only screen and (min-resolution: 192dpi),
 		only screen and (min-resolution: 2dppx) {
-		i.logo {
-			background-image: url("../img/lg.png");
+		img.logo {
+			/*background-image: url("../img/lg.png");
 			background-size: 200px 40px;
+			*/
 		}
 	}
 
@@ -30,15 +32,16 @@
 }
 
 @media screen and (max-width: 568px) {
-	i.logo {
+	img.logo {
 		width: 150px;
 		height: 40px;
 		margin-top: 8px;
 		margin-left: 10px;
 		margin-right: 5px;
 		display: block;
-		background: url("../img/lg.png") 50% 50% no-repeat;
+		/*background: url("../img/lg.png") 50% 50% no-repeat;
 		background-size: contain;
+		*/
 	}
 
 	@media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -47,9 +50,11 @@
 		only screen and (min-device-pixel-ratio: 2),
 		only screen and (min-resolution: 192dpi),
 		only screen and (min-resolution: 2dppx) {
-		i.logo {
+		img.logo {
+			/*
 			background-image: url("../img/lg.png");
 			background-size: 44px 40px;
+			*/
 		}
 	}
 }

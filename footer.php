@@ -1,15 +1,27 @@
 <footer class="footer hidden-print">
             <br>
             <div class="container text-center small">
-                
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="https://blog.gufo.me/" target="_blank">Блог</a></li>
-                    <li class="list-inline-item"><a href="https://lec.gufo.me/" target="_blank">Ежи Лец</a></li>
-                    <li class="list-inline-item"><a href="https://gufo.me/feedback">Контакты</a></li>
-                    <li class="list-inline-item"><a href="https://gufo.me/terms">Пользовательское соглашение</a></li>
-                </ul>
-            
-            <p>&copy; 2019 Gufo.me</p>
+                <!-- BEGIN MAIN NAVIGATION --> 
+                    <!--<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+       				<img id="logoMenu" class="logoMenu" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo"></a>-->    					
+					<?php wp_nav_menu( array(
+						'theme_location'  => 'menu',
+						'menu'            => '',
+						'container_id'    => '',
+						'menu_class'      => '',
+						'menu_id'         => '',
+						'echo'            => true,
+						'fallback_cb'     => 'wp_page_menu',
+						'before'          => '',
+						'after'           => '',
+						'link_before'     => '',
+						'link_after'      => '',
+						'items_wrap'      => '<ul class = "list-inline">%3$s</ul>',
+						'depth'           => 0,
+						'walker'          => '',
+					) ); ?>
+                <!-- END MAIN NAVIGATION -->              
+            <p>&copy; 2019 Iselum</p>
             </div>
 </footer>
 <!--
