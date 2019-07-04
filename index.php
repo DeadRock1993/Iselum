@@ -1,82 +1,62 @@
 <?php get_header(); ?>
 <div class="container">
     <section id="dictionary-index">
-        <h2>Темы</h2>
+        <h2>Термины</h2>
         
         <div class="row"><!--Раздел термины-->
         
         
         <!-- Три колонки div=col-md-4  разделяют на три части термины-->
-                    <div class="col-md-4">
-                        <ul class="list-unstyled">
-                            <a href="#">
-                                <li class="inner-block inner-block-1 text-center">
-                                    <span class="block-img-text">Развитие личности</span>
-                                    <div class="color-overlay"></div>		
-                                </li>
-                            </a>    
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="list-unstyled">
-                            <a href="#">
-                                <li class="inner-block inner-block-1 text-center">
-                                    <span class="block-img-text">Космология и Астрономия</span>
-                                    <div class="color-overlay"></div>		
-                                </li>
-                            </a> 
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="list-unstyled">
-                            <a href="#">
-                                <li class="inner-block inner-block-1 text-center">
-                                    <span class="block-img-text">Расизм и Ксенофобия</span>
-                                    <div class="color-overlay"></div>		
-                                </li>
-                            </a> 
-                        </ul>
-                    </div>
+                    <?php 
+                        $args = array(
+                            'orderby'            => 'name',
+                            'order'              => 'ASC',
+                            'style'              => 'none',
+                            'title_li'           => '',
+                            'hide_empty'         => 0,
+                            'child_of'           => 3,
+                            'echo'               => 0,
+                            'separator'          => '',
+                        );
 
+                        $cat = wp_list_categories( $args ); 
+                        $cat = str_replace('">', '"><li class="inner-block inner-block-1 text-center"><span class="block-img-text">', $cat);
+                        $cat = str_replace('<a', '<div class="col-md-4"><ul class="list-unstyled"><a', $cat);
+                        $cat = str_replace('</a>', '</span><div class="color-overlay"></div></li></a></ul></div>', $cat);
+                        echo $cat;
+                    ?>                 
+
+        </div>
+        <h2>Словарь</h2>
+        
+        <div class="row"><!--Раздел термины-->
+        
+        
+        <!-- Три колонки div=col-md-4  разделяют на три части термины-->
+                    <?php 
+                        $args = array(
+                            'orderby'            => 'name',
+                            'order'              => 'ASC',
+                            'style'              => 'none',
+                            'title_li'           => '',
+                            'hide_empty'         => 0,
+                            'child_of'           => 4,
+                            'echo'               => 0,
+                            'separator'          => '',
+                        );
+
+                        $cat = wp_list_categories( $args ); 
+                        $cat = str_replace('">', '"><li class="inner-block inner-block-1 text-center"><span class="block-img-text">', $cat);
+                        $cat = str_replace('<a', '<div class="col-md-4"><ul class="list-unstyled"><a', $cat);
+                        $cat = str_replace('</a>', '</span><div class="color-overlay"></div></li></a></ul></div>', $cat);
+                        echo $cat;
+                    ?>                 
 
         </div>
 
         
-        <div class="row"><!--Раздел словари-->
-
-        <!-- Три колонки div=col-md-4  разделяют на три части словари-->
-                    <div class="col-md-4">
-                        <ul class="list-unstyled">
-                            <a href="#">
-                                <li class="inner-block inner-block-1 text-center">
-                                    <span class="block-img-text">Риторика и Оратор</span>
-                                    <div class="color-overlay"></div>		
-                                </li>
-                            </a>   
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="list-unstyled">
-                            <a href="#">
-                                <li class="inner-block inner-block-1 text-center">
-                                    <span class="block-img-text">Самоконтроль и Дисциплинированность</span>
-                                    <div class="color-overlay"></div>		
-                                </li>
-                            </a>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="list-unstyled">
-                            <a href="#">
-                                <li class="inner-block inner-block-1 text-center">
-                                    <span class="block-img-text">Личные качества человека</span>
-                                    <div class="color-overlay"></div>		
-                                </li>
-                            </a>
-                        </ul>
-                    </div>
-            </div>
-</section>
+        
+    </section>
 </div>
 
         <br><br><br>
