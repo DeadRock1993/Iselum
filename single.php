@@ -14,10 +14,16 @@
 
         <br class="visible-print-block">
 
-        <h1>а-конто</h1>         
+        <h1><?php the_title();?></h1>         
         
         <p>
-            <span>Платеж, осуществляемый импортером на основании счетов экспортера в качестве предварительного расчета с последним.</span>
+            <span>
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+                the_content();
+                endwhile; else: ?>
+                <p>Нет постов по вашим критериям!</p>
+                <?php endif; ?>
+            </span>
         </p>
 
         <div class="fb-quote"></div>
