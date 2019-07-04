@@ -14,7 +14,7 @@
                             'style'              => 'none',
                             'title_li'           => '',
                             'hide_empty'         => 0,
-                            'child_of'           => 3,
+                            'child_of'           => 5,
                             'echo'               => 0,
                             'separator'          => '',
                         );
@@ -40,7 +40,7 @@
                             'style'              => 'none',
                             'title_li'           => '',
                             'hide_empty'         => 0,
-                            'child_of'           => 4,
+                            'child_of'           => 6,
                             'echo'               => 0,
                             'separator'          => '',
                         );

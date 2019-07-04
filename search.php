@@ -17,7 +17,7 @@
                     <tr>
                         <td style="white-space: nowrap;">
 	                        <i id="switch-search" class="switch-search-mode fa fa-search" style="cursor: pointer; border-right: 1px solid #ccc; padding-right: 10px; margin-right: 10px;" aria-hidden="true"></i>
-	                        <span class="ABC" style="text-decoration: underline;">а</span>
+	                        <span style="text-decoration: underline;">а</span>
                             <span class="ABC">б</span>
                             <span class="ABC">в</span>
                             <span class="ABC">г</span>
@@ -79,7 +79,6 @@
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-division">
                     <ul class="list-unstyled app-word-list">
-                    <li id='notFoundMsg' class='alert alert-light' style="display:none"><h2>По вашему запросу ничего не найдено...</h2></li>
                     <li>
                         <?php
                             $category = get_queried_object();

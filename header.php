@@ -47,7 +47,7 @@
                                 <form action="" method="get">
                                     <div class="input-group">
                                         <span class="header-search-field">
-                                            <input type="text" class="form-control-lg" name="term" value="" id="search-word" data-provide="typeahead" data-toggle="tooltip" data-placement="bottom" data-trigger="manual" title="Запрос должен быть длиннее 2 символов...">
+                                            <input type="text" class="form-control-lg" name="s" value="" id="search-word" data-provide="typeahead" data-toggle="tooltip" data-placement="bottom" data-trigger="manual" title="Запрос должен быть длиннее 2 символов...">
                                         </span>
                                         <span class="input-group-btn">
                                             <button class="btn btn-secondary btn-lg" type="submit" id="search-submit" style="cursor: pointer;" title="Найти">
