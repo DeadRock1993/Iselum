@@ -5,16 +5,17 @@
         
         <div class="row"><!--Раздел термины-->
         
-        
         <!-- Три колонки div=col-md-4  разделяют на три части термины-->
                     <?php 
+                        $cat_id1 = get_cat_ID( 'Термины' );
+
                         $args = array(
                             'orderby'            => 'name',
                             'order'              => 'ASC',
                             'style'              => 'none',
                             'title_li'           => '',
                             'hide_empty'         => 0,
-                            'child_of'           => 5,
+                            'child_of'           => $cat_id1,
                             'echo'               => 0,
                             'separator'          => '',
                         );
@@ -29,18 +30,19 @@
         </div>
         <h2>Словарь</h2>
         
-        <div class="row"><!--Раздел термины-->
+        <div class="row"><!--Раздел словарь-->
         
-        
-        <!-- Три колонки div=col-md-4  разделяют на три части термины-->
+        <!-- Три колонки div=col-md-4  разделяют на три части словарь-->
                     <?php 
+                        $cat_id2 = get_cat_ID( 'Словарь' );
+
                         $args = array(
                             'orderby'            => 'name',
                             'order'              => 'ASC',
                             'style'              => 'none',
                             'title_li'           => '',
                             'hide_empty'         => 0,
-                            'child_of'           => 6,
+                            'child_of'           => $cat_id2,
                             'echo'               => 0,
                             'separator'          => '',
                         );
