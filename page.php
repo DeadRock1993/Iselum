@@ -77,12 +77,12 @@
         </div>
         <div id="all_words" class="word-list">
             <div class="row">
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-12 col-division">
                     <ul class="list-unstyled app-word-list">
                     <li>
                         <?php
                             global $post;
-                            $args = array( 'numberposts' => 9 , 'category' => 1, 'orderby' => 'date');
+                            $args = array( 'nopaging' => true , 'category' => 1, 'orderby' => 'date');
                             $myposts = get_posts( $args );
                             foreach( $myposts as $post ){ setup_postdata($post);
                             ?>
@@ -105,7 +105,7 @@
     </article>
 
     <div class="clearfix"></div>
-
+                            <!--
         <nav id="next-page-control">
             <div class="row small">
                 <div class="col text-right">
@@ -114,7 +114,7 @@
                 </div>
             </div>
         </nav>
-    
+                        -->
         <hr>
 
 </section>

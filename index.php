@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="container">
     <section id="dictionary-index">
-        <h2>Термины</h2>
+        <h2>Темы</h2>
         
         <div class="row"><!--Раздел термины-->
         
@@ -41,8 +41,6 @@
 
         </div>
 
-            
-        <h2>Словари</h2>
         
         <div class="row"><!--Раздел словари-->
 
