@@ -77,29 +77,17 @@
         </div>
         <div id="all_words" class="word-list">
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-division">
-                    <ul class="list-unstyled app-word-list">
-                    <li>
-                        <?php
-                            $category = get_queried_object();
-                            global $post;
-                            $args = array( 'nopaging' => true , 'category' => $category->term_id, 'orderby' => 'date');
-                            $myposts = get_posts( $args );
-                            foreach( $myposts as $post ){ setup_postdata($post);
-                            ?>
-                            <div class="post">
-                            <!--<div class="post-img"><?php the_post_thumbnail('thumbnail'); ?></div>-->
-                            <div class="post-txt">
-                            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                            </div>
-                            </div>
-                            <?php
-                            }
-                            wp_reset_postdata();
-                        ?>  
-                    </li>
-                    </ul>
-                </div>
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                    <div class="col-sm-12 col-md-12 col-division">
+                        <ul class="list-unstyled app-word-list">
+                        <li>
+                        <a href="<?php the_permalink(); ?>" ><?php the_title();?></a>
+                        </li>
+                        </ul>
+                    </div>
+                    <?php endwhile; else: ?>
+                    <ul class="list-unstyled app-word-list"><li class="alert alert-light"><h2><?php _e('По вашему запросу ничего не найдено...'); ?></h2></li></ul>
+                    <?php endif; ?>
             </div>
 
         </div>
