@@ -53,7 +53,6 @@
                         $cat = str_replace('</a>', '</span><div class="color-overlay"></div></li></a></ul></div>', $cat);
                         echo $cat;
                     ?>                 
-
         </div>
 
         

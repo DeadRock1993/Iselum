@@ -62,12 +62,12 @@
         'caller_get_posts'=>1);
         $my_query = new wp_query($args);
         if( $my_query->have_posts() ) {
-        echo '<h3>Похожие записи:</h3>';
+        echo '<h3>'. the_title() . '</h3>';
         echo '<ol id="pohzapisi">';
         while ($my_query->have_posts()) {
         $my_query->the_post();
         ?><li><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
-        <?php the_post_thumbnail(); ?><?php the_title(); ?></a> –– <?php the_excerpt(); ?> 
+        <?php the_title(); ?></a> –– <?php the_excerpt(); ?> 
         <span class="small">
         <?php
                     $cats = get_the_category();
