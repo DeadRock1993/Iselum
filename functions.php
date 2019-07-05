@@ -8,4 +8,14 @@ add_theme_support( 'custom-logo', array(
 ) );
 add_theme_support( 'menus' );
 register_nav_menu( 'menu', 'menuhead' );
+
+//excerpt_length
+add_filter( 'excerpt_length', function(){
+	return 15;
+} );
+//excerpt_more
+add_filter('excerpt_more', function($more) {
+	return '...';
+});
 ?>
+

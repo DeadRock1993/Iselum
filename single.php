@@ -2,13 +2,6 @@
 <div class="container">
             
 <section id="dictionary-acticle">
-    <ol itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="breadcrumb hidden-print">
-        <li class="breadcrumb-item">
-            <a href="https://gufo.me/dict/accounting" itemprop="url">
-                <span itemprop="title">Большой бухгалтерский словарь</span>
-            </a>
-        </li>
-    </ol>
 
     <article>
 
@@ -31,7 +24,16 @@
         
         <small class="source">
             <span class="visible-print-inline">Источник: </span>
-            <span>Большой бухгалтерский словарь</span>
+            <span>
+                <?php
+                    $cats = get_the_category();
+                    for ($i = 0; $i < count($cats); $i++) {
+                    $comma = '';
+                    if ($i > 0) $comma = ', ';
+                    echo $comma . $cats[$i]->cat_name;
+                    }
+                ?>        
+            </span>
             <span class="visible-print-inline">на Gufo.me</span>
         </small>
 
@@ -39,19 +41,6 @@
     
     <div class="clearfix"></div>
     
-    <nav class="hidden-print">
-        <div class="row small">
-            <div class="col">
-                <i class="fa fa-long-arrow-left" aria-hidden="true"></i> 
-                <a href="https://gufo.me/dict/accounting/%D0%B0-%D0%B4%D0%B0%D1%82%D0%BE">а-дато</a>
-            </div>
-            
-            <div class="col text-right">
-                <a href="https://gufo.me/dict/accounting/%D0%B0-%D0%BC%D0%B5%D1%82%D0%B0">а-мета</a> 
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-            </div>
-        </div>
-    </nav>
 
     <hr class="hidden-print">
         
@@ -60,40 +49,43 @@
 
     <section id="dictionary-more" class="hidden-print">
         <article>
-            <h3>Значения в других словарях</h3>
-
-            <ol>
-                                                        
-                    <li>
-                        <a href="https://gufo.me/dict/foreign_words/%D0%B0-%D0%BA%D0%BE%D0%BD%D1%82%D0%BE">а-конто</a> —
-                        [от ит. в счёт] – ком. в счёт платежа
-                        <span class="small">Большой словарь иностранных слов</span>
-                    </li>
-                                                        
-                    <li>
-                        <a href="https://gufo.me/dict/orthography_lopatin/%D0%B0-%D0%BA%D0%BE%D0%BD%D1%82%D0%BE">а-конто</a> —
-                        орф. а-конто, неизм.
-                        <span class="small">Орфографический словарь Лопатина</span>
-                    </li>
-                                                        
-                    <li>
-                        <a href="https://gufo.me/dict/brockhaus/%D0%90-%D0%BA%D0%BE%D0%BD%D1%82%D0%BE">А-конто</a> —
-                        (а conto) — означает в дословном переводе в счет. Платежи a conto означают частную уплату известной суммы в счет всей причисляющейся суммы, т. е. такую частную уплату, посредством которой погашается только часть долга.
-                        <span class="small">Энциклопедический словарь Брокгауза и Ефрона</span>
-                    </li>
-                                                        
-                    <li>
-                        <a href="https://gufo.me/dict/economics_terms/%D0%90-%D0%9A%D0%9E%D0%9D%D0%A2%D0%9E">А-КОНТО</a> —
-                        (от итал. a conto — в счет платежа) предварительный расчет импортера с экспортером за проданные товары в виде оплаты импортером счетов экспортера.
-                        <span class="small">Экономический словарь терминов</span>
-                    </li>
-                                                        
-                    <li>
-                        <a href="https://gufo.me/dict/synonyms/%D0%B0-%D0%BA%D0%BE%D0%BD%D1%82%D0%BE">а-конто</a> —
-                        сущ., кол-во синонимов: 2  в счет 5 платеж 20
-                        <span class="small">Словарь синонимов русского языка</span>
-                    </li>
-                            </ol>
+        <?php
+        $categories = get_the_category($post->ID);
+        if ($categories) {
+        $category_ids = array();
+        foreach($categories as $individual_category) $category_ids[] = $individual_category->term_id;
+        $args=array(
+        'category__in' => $category_ids,
+        'post__not_in' => array($post->ID),
+        'showposts'=>5,
+        'orderby'=>rand,
+        'caller_get_posts'=>1);
+        $my_query = new wp_query($args);
+        if( $my_query->have_posts() ) {
+        echo '<h3>Похожие записи:</h3>';
+        echo '<ol id="pohzapisi">';
+        while ($my_query->have_posts()) {
+        $my_query->the_post();
+        ?><li><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
+        <?php the_post_thumbnail(); ?><?php the_title(); ?></a> –– <?php the_excerpt(); ?> 
+        <span class="small">
+        <?php
+                    $cats = get_the_category();
+                    for ($i = 0; $i < count($cats); $i++) {
+                    $comma = '';
+                    if ($i > 0) $comma = ', ';
+                    echo $comma . $cats[$i]->cat_name;
+                    }
+        ?>
+        </span>
+        </li>
+        <?php
+        }
+        echo '</ol>';
+        }
+        wp_reset_query();
+        }
+        ?>
         </article>
     </section>
 

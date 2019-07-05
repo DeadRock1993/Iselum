@@ -466,3 +466,6 @@ h3 {
 .ABC {
 	cursor: pointer;
 }
+#pohzapisi li p {
+	display: inline;
+}
