@@ -30,7 +30,7 @@
                     for ($i = 0; $i < count($cats); $i++) {
                     $comma = '';
                     if ($i > 0) $comma = ', ';
-                    echo $comma . '<a href="'.get_category_link($cats[$i]->cat_ID).' target="_blank" ">'.$cats[$i]->cat_name.'</a>';
+                    echo $comma . '<a href="'.get_category_link($cats[$i]->cat_ID).' " target="_blank">'.$cats[$i]->cat_name.'</a>';
                     }
                 ?>        
             </span>
@@ -62,7 +62,7 @@
         'caller_get_posts'=>1);
         $my_query = new wp_query($args);
         if( $my_query->have_posts() ) {
-        echo '<h3>'. the_title() . '</h3>';
+        echo '<h3>Другие определения:</h3>';
         echo '<ol id="pohzapisi">';
         while ($my_query->have_posts()) {
         $my_query->the_post();
@@ -74,7 +74,7 @@
                     for ($i = 0; $i < count($cats); $i++) {
                     $comma = '';
                     if ($i > 0) $comma = ', ';
-                    echo $comma . '<a href="'.get_category_link($cats[$i]->cat_ID).' target="_blank" ">'.$cats[$i]->cat_name.'</a>';
+                    echo $comma . '<a href="'.get_category_link($cats[$i]->cat_ID).' " target="_blank">'.$cats[$i]->cat_name.'</a>';
                     }
         ?>
         </span>
@@ -98,5 +98,3 @@
 
         <br>
         <?php get_footer();?>         
-
-
