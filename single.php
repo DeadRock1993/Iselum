@@ -30,7 +30,7 @@
                     for ($i = 0; $i < count($cats); $i++) {
                     $comma = '';
                     if ($i > 0) $comma = ', ';
-                    echo $comma . $cats[$i]->cat_name;
+                    echo $comma . '<a href="'.get_category_link($cats[$i]->cat_ID).'">'.$cats[$i]->cat_name.'</a>';
                     }
                 ?>        
             </span>
@@ -74,7 +74,7 @@
                     for ($i = 0; $i < count($cats); $i++) {
                     $comma = '';
                     if ($i > 0) $comma = ', ';
-                    echo $comma . $cats[$i]->cat_name;
+                    echo $comma . '<a href="'.get_category_link($cats[$i]->cat_ID).'">'.$cats[$i]->cat_name.'</a>';
                     }
         ?>
         </span>
